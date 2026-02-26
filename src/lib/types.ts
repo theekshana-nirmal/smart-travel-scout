@@ -8,3 +8,9 @@ export interface TravelExperience {
     tags: string[];
 }
 
+// AI model output
+export interface LLMMatch {
+    id: number;
+    reason: string;
+    score: number;
+}
