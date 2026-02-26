@@ -21,3 +21,9 @@ export interface MatchResult {
     reason: string;
     score: number;
 }
+
+// API response format
+export interface SearchResponse {
+    results: MatchResult[];
+    message?: string;
+}
