@@ -14,3 +14,10 @@ export interface LLMMatch {
     reason: string;
     score: number;
 }
+
+// Final result
+export interface MatchResult {
+    experience: TravelExperience;
+    reason: string;
+    score: number;
+}
