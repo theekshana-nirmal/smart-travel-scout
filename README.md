@@ -4,7 +4,7 @@ A simple web app where users type what kind of Sri Lankan travel experience they
 
 Built with Next.js 16, TypeScript, Tailwind CSS 4, and Google Gemini 2.5 Flash.
 
-**Live:** [Vercel deployment URL]
+**Live:** [Smart Travel Scout](https://smart-travel-scout-lilac.vercel.app/)
 
 ---
 
