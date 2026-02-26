@@ -47,3 +47,12 @@ export const experiences: TravelExperience[] = [
         tags: ["history", "culture", "coastal"],
     },
 ];
+
+// HELPER FUNCTIONS
+// Set of valid experience IDs
+export const validIds = new Set(experiences.map((exp) => exp.id));
+
+// Get experience by ID
+export function getExperienceById(id: number): TravelExperience | undefined {
+  return experiences.find((exp) => exp.id === id);
+}
