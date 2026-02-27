@@ -9,7 +9,7 @@ interface TagFilterProps {
 
 export default function TagFilter({selectedTags, onTagToggle}: TagFilterProps) {
     return (
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap justify-center gap-1.5">
             {allTags.map((tag) => {
                 const isActive = selectedTags.includes(tag);
                 return (
@@ -20,7 +20,7 @@ export default function TagFilter({selectedTags, onTagToggle}: TagFilterProps) {
                         className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
                             isActive
                                 ? "bg-primary text-white border-primary"
-                                : "bg-white text-gray-500 border-gray-300 hover:border-gray-400"
+                                : "bg-white text-gray-500 border-gray-200 hover:border-gray-400"
                         }`}
                     >
                         {tag}
