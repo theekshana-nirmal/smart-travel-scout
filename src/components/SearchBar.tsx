@@ -27,7 +27,7 @@ export default function SearchBar({onSearch, isLoading}: SearchBarProps) {
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder='e.g. "beach weekend with surfing under $100"'
+                    placeholder='e.g. "a chilled beach weekend with surfing vibes under $100"'
                     disabled={isLoading}
                     className="flex-1 px-4 py-3 border border-gray-300 rounded-lg
                      focus:outline-none focus:ring-2 focus:ring-primary/40
