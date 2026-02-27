@@ -1,8 +1,7 @@
-// Travel item data
+// Travel item data (matches the provided assignment inventory exactly)
 export interface TravelExperience {
     id: number;
     title: string;
-    description: string;
     location: string;
     price: number;
     tags: string[];
