@@ -30,7 +30,7 @@ RULES:
 - Return a JSON array of matches, sorted by relevance (best match first).
 - Each match must have: "id" (number from the list), "reason" (1-2 sentence explanation), "score" (1-10).
 - If no experiences match the query, return an empty array: []
-- Consider the description, location, tags, and price when matching.${filterInstructions}
+- Consider the title, location, tags, and price when matching.${filterInstructions}
 
 RESPONSE FORMAT (JSON only, no markdown, no explanation outside the array):
 [

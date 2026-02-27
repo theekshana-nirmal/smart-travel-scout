@@ -9,17 +9,17 @@ interface ResultsListProps {
 }
 
 export default function ResultsList({
-                                        results,
-                                        message,
-                                        isLoading,
-                                        hasSearched,
-                                    }: ResultsListProps) {
+    results,
+    message,
+    isLoading,
+    hasSearched,
+}: ResultsListProps) {
 
     if (isLoading) {
         return (
-            <div className="text-center py-12">
-                <div className="animate-spin h-6 w-6 border-2 border-primary
-                        border-t-transparent rounded-full mx-auto mb-4"/>
+            <div className="text-center py-16">
+                <div className="animate-spin h-5 w-5 border-2 border-primary
+                        border-t-transparent rounded-full mx-auto mb-3"/>
                 <p className="text-sm text-gray-400">Searching...</p>
             </div>
         );
@@ -27,8 +27,8 @@ export default function ResultsList({
 
     if (!hasSearched) {
         return (
-            <div className="text-center py-12">
-                <p className="text-gray-400">
+            <div className="text-center py-16">
+                <p className="text-sm text-gray-400">
                     Describe your ideal trip to get started
                 </p>
             </div>
@@ -37,9 +37,9 @@ export default function ResultsList({
 
     if (results.length === 0) {
         return (
-            <div className="text-center py-12">
-                <p className="text-gray-500 text-lg mb-2">No matching experiences found</p>
-                <p className="text-gray-400">
+            <div className="text-center py-16">
+                <p className="text-gray-500 mb-1">No matching experiences found</p>
+                <p className="text-sm text-gray-400">
                     {message || "Try adjusting your search or broadening your criteria."}
                 </p>
             </div>
@@ -47,9 +47,9 @@ export default function ResultsList({
     }
 
     return (
-        <div className="space-y-4">
-            <p className="text-sm text-gray-500">
-                Found {results.length} matching experience{results.length !== 1 ? "s" : ""}
+        <div className="space-y-3">
+            <p className="text-xs text-gray-400">
+                {results.length} result{results.length !== 1 ? "s" : ""}
             </p>
             {results.map((result) => (
                 <ResultCard key={result.experience.id} result={result}/>
